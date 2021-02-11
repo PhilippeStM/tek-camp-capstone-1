@@ -1,0 +1,54 @@
+{
+    "dresses": [
+        {
+            "productName": "Striped Dress",
+            "description": "Perfect for pairing with seaside drinks or date night.",
+            "serialNumber": "345CDE",
+            "price": 44.99,
+            "manufacturer": "Vineyard Wines",
+            "category": "dress",
+            "quantity": 2,
+            "productImage": "https://www.vineyardvines.com/dw/image/v2/AAHW_PRD/on/demandware.static/-/Sites-vineyardvines-master/default/dw2b41d174/images/2020/2Q010366_3746_LD_F.jpg?sw=1680&sh=2000&sm=cut"
+        },
+        {
+            "productName": "Party Dress",
+            "description": "Show up ready to impress with the latest styles!",
+            "serialNumber": "457HFG",
+            "price": 77.99,
+            "manufacturer": "SHEIN",
+            "category": "dress",
+            "quantity": 5,
+            "productImage": "https://img.ltwebstatic.com/images3_pi/2020/08/26/15984233250c9ed59bb7263e08772fb3f82b80da29_thumbnail_600x.webp"
+        },
+        {
+            "productName": "Elegant Evening Dress",
+            "description": "Perfect for formal occasions.",
+            "serialNumber": "871UJN",
+            "price": 485.99,
+            "manufacturer": "Knot Bene",
+            "category": "dress",
+            "quantity": 2,
+            "productImage": "https://cdn.shopify.com/s/files/1/2107/8441/products/Lace_Appliques_V-Neck_Long_Sleeveless_Elegant_Evening_Dresses.jpg?v=1571610310"
+        },
+        {
+            "productName": "Simple Dress",
+            "description": "Layered Flutter Sleeve Boxy Pleated Dress",
+            "serialNumber": "375ENE",
+            "price": 122.99,
+            "manufacturer": "MIUSOL",
+            "category": "dress",
+            "quantity": 1,
+            "productImage": "https://img.ltwebstatic.com/images3_pi/2020/04/24/1587666795b7d945a34064c295afedd680ada93fa4_thumbnail_600x.webp"
+        },
+        {
+            "productName": "Floral Summer Dress",
+            "description": "Stay in touch with your romantic side with this white stretch cotton flared midi dress.",
+            "serialNumber": "225JJK",
+            "price": 788.99,
+            "manufacturer": "Dolce & Gabbana",
+            "category": "dress",
+            "quantity": 3,
+            "productImage": "https://cdn-images.farfetch-contents.com/14/82/69/49/14826949_23946853_1000.jpg"
+        }
+    ]
+}

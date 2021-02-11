@@ -1,69 +1,87 @@
 import React from 'react';
 import CardDeck from 'react-bootstrap/CardDeck';
 import Card from 'react-bootstrap/Card';
+import shirts from '../../server/ShirtInventory.json';
+import dresses from '../../server/DressInventory.json';
+import pants from '../../server/PantsInventory.json';
 import Button from 'react-bootstrap/Button';
 import styles from '../../styles/NewestItemCard.css';
 
 const NewestItem = () => {
+
+    const shirtInventory = shirts;
+    console.log(shirtInventory);
+
+    const dressInventory = dresses;
+    console.log(dressInventory);
+
+    const pantsInventory = pants;
+    console.log(pantsInventory);
+
     return (
-        <div>
-            <CardDeck>
-                <Card>
-                    <Card.Img variant="top" src="https://cdn.shopify.com/s/files/1/1368/3463/products/HONEYCOMB-CURVE-HEM.jpg?v=1590011077" />
+        <center>
+            <CardDeck className="cardDeackWrapper">
+                <Card className="card">
+                    <Card.Img variant="top" src={dressInventory.dresses[4].productImage} />
                     <Card.Body>
-                        <Card.Title>Card title</Card.Title>
+                        <Card.Title>{dressInventory.dresses[4].productName}</Card.Title>
                         <Card.Text>
-                            This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.
+                            <p>{dressInventory.dresses[4].description}</p>
+                            <p>${dressInventory.dresses[4].price}</p>
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer>
-                        <small className="text-muted">Last updated 3 mins ago</small>
+                        <small className="text-muted">ADD TO CART </small>
+                        <small className="text-muted">({dressInventory.dresses[4].quantity} in stock)</small>
                     </Card.Footer>
                 </Card>
-                <Card>
-                    <Card.Img variant="top" src="https://cdn.shopify.com/s/files/1/1368/3463/products/HONEYCOMB-CURVE-HEM.jpg?v=1590011077" />
+
+                <Card className="card">
+                    <Card.Img variant="top" src={shirtInventory.shirts[3].productImage} />
                     <Card.Body>
-                        <Card.Title>Card title</Card.Title>
+                        <Card.Title>{shirtInventory.shirts[3].productName}</Card.Title>
                         <Card.Text>
-                            This card has supporting text below as a natural lead-in to additional
-        content.{' '}
+                            <p>{shirtInventory.shirts[3].description}</p>
+                            <p>${shirtInventory.shirts[3].price}</p>
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer>
-                        <small className="text-muted">Last updated 3 mins ago</small>
+                        <small className="text-muted">ADD TO CART </small>
+                        <small className="text-muted">({shirtInventory.shirts[3].quantity} in stock)</small>
                     </Card.Footer>
                 </Card>
-                <Card>
-                    <Card.Img variant="top" src="https://cdn.shopify.com/s/files/1/1368/3463/products/HONEYCOMB-CURVE-HEM.jpg?v=1590011077" />
+
+                <Card className="card">
+                    <Card.Img variant="top" src={pantsInventory.pants[4].productImage} />
                     <Card.Body>
-                        <Card.Title>Card title</Card.Title>
+                        <Card.Title>{pantsInventory.pants[4].productName}</Card.Title>
                         <Card.Text>
-                            This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This card has even longer content than the first to
-                            show that equal height action.
+                            <p>{pantsInventory.pants[4].description}</p>
+                            <p>${pantsInventory.pants[4].price}</p>
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer>
-                        <small className="text-muted">Last updated 3 mins ago</small>
+                        <small className="text-muted">ADD TO CART </small>
+                        <small className="text-muted">({pantsInventory.pants[4].quantity} in stock)</small>
                     </Card.Footer>
                 </Card>
-                <Card>
-                    <Card.Img variant="top" src="https://cdn.shopify.com/s/files/1/1368/3463/products/HONEYCOMB-CURVE-HEM.jpg?v=1590011077" />
+
+                <Card className="card">
+                    <Card.Img variant="top" src={shirtInventory.shirts[4].productImage} />
                     <Card.Body>
-                        <Card.Title>Card title</Card.Title>
+                        <Card.Title>{shirtInventory.shirts[4].productName}</Card.Title>
                         <Card.Text>
-                            This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This card has even longer content than the first to
-                            show that equal height action.
+                            <p>{shirtInventory.shirts[4].description}</p>
+                            <p>${shirtInventory.shirts[4].price}</p>
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer>
-                        <small className="text-muted">Last updated 3 mins ago</small>
+                        <small className="text-muted">ADD TO CART </small>
+                        <small className="text-muted">({shirtInventory.shirts[4].quantity} in stock)</small>
                     </Card.Footer>
                 </Card>
             </CardDeck>
-        </div>
+        </center>
     )
 }
 
