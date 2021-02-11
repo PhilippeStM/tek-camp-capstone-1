@@ -6,7 +6,7 @@ const CarouselComponent = () => {
     return(
         <center>
         <Carousel>
-            <Carousel.Item>
+            <Carousel.Item interval={15000}>
                 <img
                     className="carouselImg"
                     src="https://cdn.shopify.com/s/files/1/1368/3463/products/HONEYCOMB-CURVE-HEM.jpg?v=1590011077"
@@ -18,7 +18,7 @@ const CarouselComponent = () => {
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                 </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item interval={15000}>
                 <img
                     className="carouselImg"
                     src="https://cdn.shopify.com/s/files/1/1368/3463/products/CUTS-2020-05-11_On-Model_Video_4122.jpg?v=1590011077"
@@ -31,7 +31,7 @@ const CarouselComponent = () => {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item interval={15000}>
                 <img
                     className="carouselImg"
                     src="https://cdn.shopify.com/s/files/1/1368/3463/products/CUTS-2020-05-11_On-Model_Video_4115.jpg?v=1590011076"
