@@ -1,12 +1,25 @@
 .carouselImg {
-    width: 15%;
+    height: 450px;
 }
 
 h3, p {
     color: black;
     padding: 5px 10px 5px 10px;
-    background-color: rgba(255, 255, 255, 0.801);
+    background-color: rgba(255, 255, 255, 0.836);
     border-radius: 10px;
     width: fit-content;
     display: inline-block;
+}
+
+p {
+    max-width: 325px;
+}
+
+h3 {
+    max-width: 325px;
+}
+
+.carouselWrapper {
+    background-color: rgb(75, 75, 75);
+    width: 800px;
 }

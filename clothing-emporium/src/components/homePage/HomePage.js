@@ -9,7 +9,6 @@ const HomePage = () => {
     return (
 
         <div>
-
             <NavBar />
             <h2>Featured Products:</h2>
             <CarouselComponent />

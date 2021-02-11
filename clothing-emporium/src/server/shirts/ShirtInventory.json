@@ -1,0 +1,24 @@
+{
+    "shirts": [
+        {
+            "productName": "Men's T-Shirt",
+            "description": "Our best selling short sleeve, the Crew Curve-Hem is as dependable as it gets.",
+            "serialNumber": "123ABC",
+            "price": 24.99,
+            "manufacturer": "Hanes",
+            "category": "t-shirt",
+            "quantity": 10,
+            "productImage": "https://cdn.shopify.com/s/files/1/1368/3463/products/HONEYCOMB-CURVE-HEM.jpg?v=1590011077"
+        },
+        {
+            "productName": "Golf Premium Polo",
+            "description": "This extraordinary all-cotton polo simply will not wrinkle, fade, shrink or pill.",
+            "serialNumber": "234BCD",
+            "price": 32.99,
+            "manufacturer": "L.L. Bean",
+            "category": "polo shirt",
+            "quantity": 5,
+            "productImage": "https://cdni.llbean.net/is/image/wim/300454_37956_41?hei=764&wid=665&resMode=sharp2&defaultImage=llbstage/A0211793_2"
+        }
+    ]
+}
