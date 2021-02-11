@@ -1,0 +1,20 @@
+.navBar {
+    width: 800px;
+}
+
+.link {
+    color: whitesmoke;
+    margin: 0px 15px 0px 15px;
+}
+
+.link:hover {
+    color: orange;
+}
+
+.cart {
+    margin-left: 25px;
+}
+
+.button {
+    margin-right: 50px;
+}

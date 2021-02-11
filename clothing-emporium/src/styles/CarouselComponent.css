@@ -1,0 +1,12 @@
+.carouselImg {
+    width: 15%;
+}
+
+h3, p {
+    color: black;
+    padding: 5px 10px 5px 10px;
+    background-color: rgba(255, 255, 255, 0.801);
+    border-radius: 10px;
+    width: fit-content;
+    display: inline-block;
+}
