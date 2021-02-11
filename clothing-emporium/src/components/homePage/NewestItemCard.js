@@ -5,7 +5,7 @@ import shirts from '../../server/ShirtInventory.json';
 import dresses from '../../server/DressInventory.json';
 import pants from '../../server/PantsInventory.json';
 import Button from 'react-bootstrap/Button';
-import styles from '../../styles/NewestItemCard.css';
+import styles from '../../styles/NewestItemCard.module.css';
 
 const NewestItem = () => {
 
@@ -20,8 +20,8 @@ const NewestItem = () => {
 
     return (
         <center>
-            <CardDeck className="cardDeackWrapper">
-                <Card className="card">
+            <CardDeck className={styles.wrapper}>
+                <Card>
                     <Card.Img variant="top" src={dressInventory.dresses[4].productImage} />
                     <Card.Body>
                         <Card.Title>{dressInventory.dresses[4].productName}</Card.Title>
@@ -31,12 +31,12 @@ const NewestItem = () => {
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer>
-                        <small className="text-muted">ADD TO CART </small>
-                        <small className="text-muted">({dressInventory.dresses[4].quantity} in stock)</small>
+                        <small>ADD TO CART </small>
+                        <small>({dressInventory.dresses[4].quantity} in stock)</small>
                     </Card.Footer>
                 </Card>
 
-                <Card className="card">
+                <Card>
                     <Card.Img variant="top" src={shirtInventory.shirts[3].productImage} />
                     <Card.Body>
                         <Card.Title>{shirtInventory.shirts[3].productName}</Card.Title>
@@ -46,12 +46,12 @@ const NewestItem = () => {
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer>
-                        <small className="text-muted">ADD TO CART </small>
-                        <small className="text-muted">({shirtInventory.shirts[3].quantity} in stock)</small>
+                        <small>ADD TO CART </small>
+                        <small>({shirtInventory.shirts[3].quantity} in stock)</small>
                     </Card.Footer>
                 </Card>
 
-                <Card className="card">
+                <Card>
                     <Card.Img variant="top" src={pantsInventory.pants[4].productImage} />
                     <Card.Body>
                         <Card.Title>{pantsInventory.pants[4].productName}</Card.Title>
@@ -61,12 +61,12 @@ const NewestItem = () => {
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer>
-                        <small className="text-muted">ADD TO CART </small>
-                        <small className="text-muted">({pantsInventory.pants[4].quantity} in stock)</small>
+                        <small>ADD TO CART </small>
+                        <small>({pantsInventory.pants[4].quantity} in stock)</small>
                     </Card.Footer>
                 </Card>
 
-                <Card className="card">
+                <Card>
                     <Card.Img variant="top" src={shirtInventory.shirts[4].productImage} />
                     <Card.Body>
                         <Card.Title>{shirtInventory.shirts[4].productName}</Card.Title>
@@ -76,8 +76,8 @@ const NewestItem = () => {
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer>
-                        <small className="text-muted">ADD TO CART </small>
-                        <small className="text-muted">({shirtInventory.shirts[4].quantity} in stock)</small>
+                        <small>ADD TO CART </small>
+                        <small>({shirtInventory.shirts[4].quantity} in stock)</small>
                     </Card.Footer>
                 </Card>
             </CardDeck>

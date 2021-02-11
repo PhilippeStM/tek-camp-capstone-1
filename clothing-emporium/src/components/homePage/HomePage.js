@@ -2,7 +2,7 @@ import React from 'react';
 import NavBar from '../navBar/NavBar';
 import CarouselComponent from '../homePage/CarouselComponent';
 import NewestItemCard from './NewestItemCard';
-import styles from '../../styles/HomePage.css';
+import styles from '../../styles/HomePage.module.css';
 
 const HomePage = () => {
 
@@ -10,9 +10,9 @@ const HomePage = () => {
 
         <div>
             <NavBar />
-            <h2>Featured Products:</h2>
+            <h2 className={styles.align}>Featured Products:</h2>
             <CarouselComponent />
-            <h2>Newest Products:</h2>
+            <h2 className={styles.align}>Newest Products:</h2>
             <NewestItemCard />
         </div>
 

@@ -6,25 +6,25 @@ import Button from 'react-bootstrap/Button';
 import FormControl from 'react-bootstrap/FormControl';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
-import styles from '../../styles/NavBar.css';
+import styles from '../../styles/NavBar.module.css';
 
 const NavBar = () => {
     return (
         <center>
             <h1>Clothing Emporium</h1>
             
-            <Navbar bg="dark" variant="dark" className="navBar">
+            <Navbar bg="dark" variant="dark" className={styles.navBar}>
                 {/* <Navbar.Brand>Navigation</Navbar.Brand> */}
-                <Nav className="mr-auto">
-                        <Link to="/" className="link">Home</Link>
-                        <Link to="/order" className="link">Order</Link>
-                        <Link to="/checkout" className="link">Checkout</Link>
+                <Nav>
+                        <Link to="/" className={styles.link}>Home</Link>
+                        <Link to="/order" className={styles.link}>Order</Link>
+                        <Link to="/checkout" className={styles.link}>Checkout</Link>
                 </Nav>
                 <Form inline>
-                    <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                    <Button variant="outline-info" className="button">Search</Button>
+                    <FormControl type="text" placeholder="Search" />
+                    <Button variant="outline-info" className={styles.button}>Search</Button>
                 </Form>
-                <Cart className="cart"/>
+                <Cart className={styles.cart}/>
             </Navbar>
 
         </center>

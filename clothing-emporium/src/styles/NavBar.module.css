@@ -2,19 +2,19 @@
     max-width: 1000px;
 }
 
-.link {
+.navBar .link {
     color: whitesmoke;
     margin: 0px 15px 0px 15px;
 }
 
-.link:hover {
+.navBar .link:hover {
     color: orange;
 }
 
-.cart {
+.navBar .cart {
     margin-left: 25px;
 }
 
-.button {
+.navBar .button {
     margin-right: 50px;
 }
