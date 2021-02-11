@@ -1,5 +1,4 @@
 import React from 'react';
-import NavBar from '../navBar/NavBar';
 import shirts from '../../server/ShirtInventory.json';
 import dresses from '../../server/DressInventory.json';
 import pants from '../../server/PantsInventory.json';
@@ -20,8 +19,6 @@ const OrderPage = () => {
 
     return (
         <center>
-            <NavBar />
-            <h3>This is the order page!</h3>
             <CardDeck className={styles.deck}>
                 {shirtInventory.shirts.map(data => (
                         <Card>
