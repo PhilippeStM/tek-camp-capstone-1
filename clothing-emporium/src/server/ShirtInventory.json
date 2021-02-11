@@ -1,0 +1,13 @@
+{
+    "shirts": [
+        {
+            "productName": "Orange Shirt",
+            "serialNumber": "123ABC",
+            "price": "24.99",
+            "manufacturer": "Hanes",
+            "category": "t-shirt",
+            "quantity": "10",
+            "productImage": "test"
+        }
+    ]
+}

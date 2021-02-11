@@ -6,7 +6,6 @@ import styles from '../../styles/HomePage.css';
 
 const HomePage = () => {
 
-
     return (
 
         <div>
