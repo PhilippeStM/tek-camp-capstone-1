@@ -24,6 +24,10 @@ const NavBar = () => {
         let array = [];
         while (i < shirtInventory.shirts.length) {
             array.push(shirtInventory.shirts[i].productName)
+            if(search == array[i]){
+                console.log("This search input matches one of the product names: " + shirtInventory.shirts[i].productName);
+            }
+            else(console.log("No item was found, please check your spelling."))
             i++;
         }
         console.log(array);
@@ -33,7 +37,7 @@ const NavBar = () => {
 
 
     // search loop query might be the key to finding all info thru search functionality.
-    
+
     return (
         <center>
             <h1>Clothing Emporium</h1>
