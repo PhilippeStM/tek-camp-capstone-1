@@ -10,13 +10,10 @@ import styles from '../../styles/NewestItemCard.module.css';
 const NewestItem = () => {
 
     const shirtInventory = shirts;
-    console.log(shirtInventory);
 
     const dressInventory = dresses;
-    console.log(dressInventory);
 
     const pantsInventory = pants;
-    console.log(pantsInventory);
 
     return (
         <center>

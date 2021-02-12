@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import Button from 'react-bootstrap/Button';
 import shirts from '../../server/ShirtInventory.json';
 import dresses from '../../server/DressInventory.json';
 import pants from '../../server/PantsInventory.json';
@@ -8,17 +9,36 @@ import styles from '../../styles/ShirtOrderItems.module.css';
 
 const OrderPage = () => {
 
+    // const [searchTerm, setSearchTerm] = useState("");
+    // const [searchResults, setSearchResults] = useState([]);
+
     const shirtInventory = shirts;
-    console.log(shirtInventory);
 
     const dressInventory = dresses;
-    console.log(dressInventory);
 
     const pantsInventory = pants;
-    console.log(pantsInventory);
+
+    // const handleChange = e => {
+    //     setSearchTerm(e.target.value);
+    // }
+
+    // console.log(searchTerm);
+
+    // useEffect(() => {
+    //     const results = shirtInventory.shirts.map.filter(data =>
+    //         data.includes(searchTerm)
+    //     );
+    //     setSearchResults(results);
+    // }, [searchTerm]);
 
     return (
         <center>
+                <input
+                type="text"
+                placeholder="Search"
+                // value={searchTerm}
+                // onChange={handleChange}
+            />
             <CardDeck className={styles.deck}>
                 {shirtInventory.shirts.map(data => (
                         <Card>
@@ -31,7 +51,7 @@ const OrderPage = () => {
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
-                                <small>ADD TO CART </small>
+                                <Button>Add to Cart</Button>
                                 <small>({data.quantity} in stock)</small>
                             </Card.Footer>
                         </Card>
