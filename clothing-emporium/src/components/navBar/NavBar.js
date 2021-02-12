@@ -7,8 +7,26 @@ import FormControl from 'react-bootstrap/FormControl';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import styles from '../../styles/NavBar.module.css';
+import shirts from '../../server/ShirtInventory.json';
 
 const NavBar = () => {
+
+    let shirtInventory = shirts;
+    let [search, setSearch] = useState("");
+
+    const inputChange = (e) => {
+        setSearch(e.target.value);
+    }
+
+    console.log(search);
+    console.log(shirtInventory);
+    console.log(shirtInventory.shirts[0].productName);
+
+    const submitSearchQuery = (e) => {
+        if(search === shirtInventory.shirts[0].productName) {
+            console.log("your search is working for array 0");
+        }
+    }
 
     return (
         <center>
@@ -21,8 +39,8 @@ const NavBar = () => {
                         <Link to="/checkout" className={styles.link}>Checkout</Link>
                 </Nav>
                 <Form inline>
-                    <FormControl type="text" placeholder="Search" />
-                    <Button variant="outline-info" className={styles.button}>Search</Button>
+                    <FormControl onChange={inputChange} type="text" placeholder="Search" />
+                    <Button onClick={submitSearchQuery} variant="outline-info" className={styles.button}>Search</Button>
                 </Form>
                 <Cart className={styles.cart}/>
             </Navbar>

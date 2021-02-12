@@ -9,35 +9,17 @@ import styles from '../../styles/ShirtOrderItems.module.css';
 
 const OrderPage = () => {
 
-    // const [searchTerm, setSearchTerm] = useState("");
-    // const [searchResults, setSearchResults] = useState([]);
-
     const shirtInventory = shirts;
 
     const dressInventory = dresses;
 
     const pantsInventory = pants;
 
-    // const handleChange = e => {
-    //     setSearchTerm(e.target.value);
-    // }
-
-    // console.log(searchTerm);
-
-    // useEffect(() => {
-    //     const results = shirtInventory.shirts.map.filter(data =>
-    //         data.includes(searchTerm)
-    //     );
-    //     setSearchResults(results);
-    // }, [searchTerm]);
-
     return (
         <center>
                 <input
                 type="text"
                 placeholder="Search"
-                // value={searchTerm}
-                // onChange={handleChange}
             />
             <CardDeck className={styles.deck}>
                 {shirtInventory.shirts.map(data => (
