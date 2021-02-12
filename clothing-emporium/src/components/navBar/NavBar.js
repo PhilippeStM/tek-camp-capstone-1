@@ -13,36 +13,42 @@ const NavBar = () => {
 
     let shirtInventory = shirts;
     let [search, setSearch] = useState("");
+    let [searchLoopQuery, setSearchLoopQuery] = useState([]);
 
     const inputChange = (e) => {
         setSearch(e.target.value);
     }
 
-    console.log(search);
-    console.log(shirtInventory);
-    console.log(shirtInventory.shirts[0].productName);
-
     const submitSearchQuery = (e) => {
-        if(search === shirtInventory.shirts[0].productName) {
-            console.log("your search is working for array 0");
+        let i = 0;
+        let array = [];
+        while (i < shirtInventory.shirts.length) {
+            array.push(shirtInventory.shirts[i].productName)
+            i++;
         }
+        console.log(array);
+        setSearchLoopQuery(array);
+        return setSearchLoopQuery;
     }
 
+
+    // search loop query might be the key to finding all info thru search functionality.
+    
     return (
         <center>
             <h1>Clothing Emporium</h1>
-            
+            {/* {console.log(searchLoopQuery)} */}
             <Navbar bg="dark" variant="dark" className={styles.navBar}>
                 <Nav>
-                        <Link to="/" className={styles.link}>Home</Link>
-                        <Link to="/order" className={styles.link}>Order</Link>
-                        <Link to="/checkout" className={styles.link}>Checkout</Link>
+                    <Link to="/" className={styles.link}>Home</Link>
+                    <Link to="/order" className={styles.link}>Order</Link>
+                    <Link to="/checkout" className={styles.link}>Checkout</Link>
                 </Nav>
                 <Form inline>
                     <FormControl onChange={inputChange} type="text" placeholder="Search" />
                     <Button onClick={submitSearchQuery} variant="outline-info" className={styles.button}>Search</Button>
                 </Form>
-                <Cart className={styles.cart}/>
+                <Cart className={styles.cart} />
             </Navbar>
 
         </center>
