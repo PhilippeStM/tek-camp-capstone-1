@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import CardDeck from 'react-bootstrap/CardDeck';
 import Card from 'react-bootstrap/Card';
 import inventoryImport from '../../server/Inventory.json';
 import Button from 'react-bootstrap/Button';
 import styles from '../../styles/NewestItemCard.module.css';
 
-const NewestItem = () => {
+const NewestItem = (props) => {
 
     const inventory = inventoryImport;
 
@@ -23,6 +24,7 @@ const NewestItem = () => {
                     </Card.Body>
                     <Card.Footer>
                         <small>ADD TO CART </small>
+                        <Link to={"/item/" + inventory.dresses[4].id} params={inventory.dresses[4].id}>View Details</Link>
                         <small>({inventory.dresses[4].quantity} in stock)</small>
                     </Card.Footer>
                 </Card>

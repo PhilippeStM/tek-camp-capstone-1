@@ -12,7 +12,7 @@ const ClothingStoreApp = () => {
                 <Route exact path="/" component={HomePage}></Route>
                 <Route exact path="/order" component={OrderPage}></Route>
                 <Route exact path="/checkout" component={CheckoutPage}></Route>
-                <Route exact path="/item/:serialNumber" component={ItemViewPage}></Route>
+                <Route exact path="/item/:id" component={ItemViewPage}></Route>
         </Router>
     )
 }
