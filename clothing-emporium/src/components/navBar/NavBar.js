@@ -7,11 +7,11 @@ import FormControl from 'react-bootstrap/FormControl';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import styles from '../../styles/NavBar.module.css';
-import shirts from '../../server/ShirtInventory.json';
+import inventoryImport from '../../server/Inventory.json';
 
 const NavBar = () => {
 
-    let shirtInventory = shirts;
+    let inventory = inventoryImport;
     let [search, setSearch] = useState("");
     let [searchLoopQuery, setSearchLoopQuery] = useState([]);
 
@@ -22,10 +22,10 @@ const NavBar = () => {
     const submitSearchQuery = (e) => {
         let i = 0;
         let array = [];
-        while (i < shirtInventory.shirts.length) {
-            array.push(shirtInventory.shirts[i].productName)
+        while (i < inventory.shirts.length) {
+            array.push(inventory.shirts[i].productName)
             if(search == array[i]){
-                console.log("This search input matches one of the product names: " + shirtInventory.shirts[i].productName);
+                console.log("This search input matches one of the product names: " + inventory.shirts[i].productName);
             }
             else(console.log("No item was found, please check your spelling."))
             i++;

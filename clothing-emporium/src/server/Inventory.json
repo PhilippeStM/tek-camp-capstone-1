@@ -1,0 +1,158 @@
+{
+    "shirts":[
+        {
+            "productName": "Men's T-Shirt",
+            "description": "Our best selling short sleeve, the Crew Curve-Hem is as dependable as it gets.",
+            "serialNumber": "123ABC",
+            "price": 24.99,
+            "manufacturer": "Hanes",
+            "category": "t-shirt",
+            "quantity": 10,
+            "productImage": "https://cdn.shopify.com/s/files/1/1368/3463/products/HONEYCOMB-CURVE-HEM.jpg?v=1590011077"
+        },
+        {
+            "productName": "Golf Premium Polo",
+            "description": "This extraordinary all-cotton polo simply will not wrinkle, fade, shrink or pill.",
+            "serialNumber": "234BCD",
+            "price": 32.99,
+            "manufacturer": "L.L. Bean",
+            "category": "polo shirt",
+            "quantity": 5,
+            "productImage": "https://cdni.llbean.net/is/image/wim/300454_37956_41?hei=764&wid=665&resMode=sharp2&defaultImage=llbstage/A0211793_2"
+        },
+        {
+            "productName": "Colorblock Striped Shirt",
+            "description": "Super soft and eye-popping, this collared shirt will make you stand out!",
+            "serialNumber": "567GHI",
+            "price": 16.99,
+            "manufacturer": "SHEIN",
+            "category": "collared shirt",
+            "quantity": 12,
+            "productImage": "https://img.ltwebstatic.com/images3_pi/2020/04/20/1587345847b2554e48da24f4c0a0cf698fcd502ff1_thumbnail_600x.webp"
+        },
+        {
+            "productName": "Dragon Button Up Shirt",
+            "description": "Men's casual shirt, multi-purpose.",
+            "serialNumber": "578DLA",
+            "price": 18.99,
+            "manufacturer": "Custom",
+            "category": "collared shirt",
+            "quantity": 5,
+            "productImage": "https://img.ltwebstatic.com/images3_pi/2020/05/25/1590398759cc4806eff157f77e84b07520eadd0e48.webp"
+        },
+        {
+            "productName": "Pocketed Shirt",
+            "description": "Where casual meets pockets! Features a blue/grey/white design with buttons.",
+            "serialNumber": "321DJI",
+            "price": 18.99,
+            "manufacturer": "SHEIN",
+            "category": "button up shirt",
+            "quantity": 1,
+            "productImage": "https://img.ltwebstatic.com/images3_pi/2020/03/20/1584686856eca646e13bb206cd2a72a9283421b92d_thumbnail_600x.webp"
+        }
+    ],
+    "pants":[
+        {
+            "productName": "Cropped Pants",
+            "description": "Women's High waisted Slim Fit Office Casual Pants Trousers with Pockets.",
+            "serialNumber": "456DEF",
+            "price": 12.99,
+            "manufacturer": "Grace Karin",
+            "category": "pants",
+            "quantity": 7,
+            "productImage": "https://images-na.ssl-images-amazon.com/images/I/61O58llG6AL._AC_UX342_.jpg"
+        },
+        {
+            "productName": "Ripstop Pants",
+            "description": "Stay adventure bound in our most versatile everyday pants.",
+            "serialNumber": "122JNA",
+            "price": 70.99,
+            "manufacturer": "vuori",
+            "category": "pants",
+            "quantity": 4,
+            "productImage": "https://vuori.imgix.net/s/files/1/0022/4008/6074/products/VW401COP_1_2048x.jpg?auto=compress,format&w=1230&v=1595613506"
+        },
+        {
+            "productName": "Work Canvas Pants",
+            "description": "Take on any job with the Ridgecut FMB19-1027 Men's Regular Fit Flex Work Canvas Pants.",
+            "serialNumber": "378YUE",
+            "price": 23.99,
+            "manufacturer": "Tractor Supply",
+            "category": "pants",
+            "quantity": 20,
+            "productImage": "https://media.tractorsupply.com/is/image/TractorSupplyCompany/1374635?$456$"
+        },
+        {
+            "productName": "Track Pants",
+            "description": "Perfect for running or hitting the gym.",
+            "serialNumber": "654SDH",
+            "price": 57.99,
+            "manufacturer": "adidas",
+            "category": "pants",
+            "quantity": 14,
+            "productImage": "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy/c9753d23e1c34cb98a2dab1a012985db_9366/Bandrix_Track_Pants_Black_FM3887_21_model.jpg"
+        },
+        {
+            "productName": "Skating Jeans",
+            "description": "Utility-look jeans from BDG with a baggy fit.",
+            "serialNumber": "832SDJ",
+            "price": 43.99,
+            "manufacturer": "BDG",
+            "category": "pants",
+            "quantity": 8,
+            "productImage": "https://s7d5.scene7.com/is/image/UrbanOutfitters/55560874_002_e?$xlarge$=&fit=constrain&fmt=webp&qlt=80&wid=1366"
+        }
+    ],
+    "dresses":[
+        {
+            "productName": "Striped Dress",
+            "description": "Perfect for pairing with seaside drinks or date night.",
+            "serialNumber": "345CDE",
+            "price": 44.99,
+            "manufacturer": "Vineyard Wines",
+            "category": "dress",
+            "quantity": 2,
+            "productImage": "https://www.vineyardvines.com/dw/image/v2/AAHW_PRD/on/demandware.static/-/Sites-vineyardvines-master/default/dw2b41d174/images/2020/2Q010366_3746_LD_F.jpg?sw=1680&sh=2000&sm=cut"
+        },
+        {
+            "productName": "Party Dress",
+            "description": "Show up ready to impress with the latest styles!",
+            "serialNumber": "457HFG",
+            "price": 77.99,
+            "manufacturer": "SHEIN",
+            "category": "dress",
+            "quantity": 5,
+            "productImage": "https://img.ltwebstatic.com/images3_pi/2020/08/26/15984233250c9ed59bb7263e08772fb3f82b80da29_thumbnail_600x.webp"
+        },
+        {
+            "productName": "Elegant Evening Dress",
+            "description": "Perfect for formal occasions.",
+            "serialNumber": "871UJN",
+            "price": 485.99,
+            "manufacturer": "Knot Bene",
+            "category": "dress",
+            "quantity": 2,
+            "productImage": "https://cdn.shopify.com/s/files/1/2107/8441/products/Lace_Appliques_V-Neck_Long_Sleeveless_Elegant_Evening_Dresses.jpg?v=1571610310"
+        },
+        {
+            "productName": "Simple Dress",
+            "description": "Layered Flutter Sleeve Boxy Pleated Dress",
+            "serialNumber": "375ENE",
+            "price": 122.99,
+            "manufacturer": "MIUSOL",
+            "category": "dress",
+            "quantity": 1,
+            "productImage": "https://img.ltwebstatic.com/images3_pi/2020/04/24/1587666795b7d945a34064c295afedd680ada93fa4_thumbnail_600x.webp"
+        },
+        {
+            "productName": "Floral Summer Dress",
+            "description": "Stay in touch with your romantic side with this white stretch cotton flared midi dress.",
+            "serialNumber": "225JJK",
+            "price": 788.99,
+            "manufacturer": "Dolce & Gabbana",
+            "category": "dress",
+            "quantity": 3,
+            "productImage": "https://cdn-images.farfetch-contents.com/14/82/69/49/14826949_23946853_1000.jpg"
+        }
+    ]
+}

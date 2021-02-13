@@ -1,80 +1,77 @@
 import React from 'react';
 import CardDeck from 'react-bootstrap/CardDeck';
 import Card from 'react-bootstrap/Card';
-import shirts from '../../server/ShirtInventory.json';
-import dresses from '../../server/DressInventory.json';
-import pants from '../../server/PantsInventory.json';
+// import shirts from '../../server/inventory.json';
+// import dresses from '../../server/inventory.json';
+// import pants from '../../server/inventory.json';
+import inventoryImport from '../../server/Inventory.json';
 import Button from 'react-bootstrap/Button';
 import styles from '../../styles/NewestItemCard.module.css';
 
 const NewestItem = () => {
 
-    const shirtInventory = shirts;
-
-    const dressInventory = dresses;
-
-    const pantsInventory = pants;
+    const inventory = inventoryImport;
 
     return (
         <center>
             <CardDeck className={styles.wrapper}>
                 <Card>
-                    <Card.Img variant="top" src={dressInventory.dresses[4].productImage} />
+                    <Card.Img variant="top" src={inventory.dresses[4].productImage} />
                     <Card.Body>
-                        <Card.Title>{dressInventory.dresses[4].productName}</Card.Title>
+                        <Card.Title>{inventory.dresses[4].productName}</Card.Title>
                         <Card.Text>
-                            <p>{dressInventory.dresses[4].description}</p>
-                            <p>${dressInventory.dresses[4].price}</p>
+                            <p>{inventory.dresses[4].description}</p>
+                            <p>${inventory.dresses[4].price}</p>
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer>
                         <small>ADD TO CART </small>
-                        <small>({dressInventory.dresses[4].quantity} in stock)</small>
+                        <small>({inventory.dresses[4].quantity} in stock)</small>
                     </Card.Footer>
                 </Card>
 
                 <Card>
-                    <Card.Img variant="top" src={shirtInventory.shirts[3].productImage} />
+                    <Card.Img variant="top" src={inventory.shirts[3].productImage} />
                     <Card.Body>
-                        <Card.Title>{shirtInventory.shirts[3].productName}</Card.Title>
+                        <Card.Title>{inventory.shirts[3].productName}</Card.Title>
                         <Card.Text>
-                            <p>{shirtInventory.shirts[3].description}</p>
-                            <p>${shirtInventory.shirts[3].price}</p>
+                            <p>{inventory.shirts[3].description}</p>
+                            <p>${inventory.shirts[3].price}</p>
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer>
                         <small>ADD TO CART </small>
-                        <small>({shirtInventory.shirts[3].quantity} in stock)</small>
+                        <small>({inventory.shirts[3].quantity} in stock)</small>
                     </Card.Footer>
                 </Card>
 
                 <Card>
-                    <Card.Img variant="top" src={pantsInventory.pants[4].productImage} />
+                    <Card.Img variant="top" src={inventory.pants[4].productImage} />
                     <Card.Body>
-                        <Card.Title>{pantsInventory.pants[4].productName}</Card.Title>
+                        <Card.Title>{inventory.pants[4].productName}</Card.Title>
                         <Card.Text>
-                            <p>{pantsInventory.pants[4].description}</p>
-                            <p>${pantsInventory.pants[4].price}</p>
+                            <p>{inventory.pants[4].description}</p>
+                            <p>${inventory.pants[4].price}</p>
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer>
                         <small>ADD TO CART </small>
-                        <small>({pantsInventory.pants[4].quantity} in stock)</small>
+                        <small>({inventory.pants[4].quantity} in stock)</small>
                     </Card.Footer>
                 </Card>
 
                 <Card>
-                    <Card.Img variant="top" src={shirtInventory.shirts[4].productImage} />
+                    <Card.Img variant="top" src={inventory.shirts[4].productImage} />
                     <Card.Body>
-                        <Card.Title>{shirtInventory.shirts[4].productName}</Card.Title>
+                        <Card.Title>{inventory.shirts[4].productName}</Card.Title>
                         <Card.Text>
-                            <p>{shirtInventory.shirts[4].description}</p>
-                            <p>${shirtInventory.shirts[4].price}</p>
+                            <p>{inventory.shirts[4].description}</p>
+                            <p>${inventory.shirts[4].price}</p>
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer>
                         <small>ADD TO CART </small>
-                        <small>({shirtInventory.shirts[4].quantity} in stock)</small>
+                        <small>({inventory.shirts[4].quantity} in stock)</small>
                     </Card.Footer>
                 </Card>
             </CardDeck>
