@@ -1,8 +1,5 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-// import shirts from '../../server/inventory.json';
-// import dresses from '../../server/inventory.json';
-// import pants from '../../server/inventory.json';
 import inventoryImport from '../../server/Inventory.json';
 import styles from '../../styles/CarouselComponent.module.css';
 

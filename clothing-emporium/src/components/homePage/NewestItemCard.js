@@ -1,9 +1,6 @@
 import React from 'react';
 import CardDeck from 'react-bootstrap/CardDeck';
 import Card from 'react-bootstrap/Card';
-// import shirts from '../../server/inventory.json';
-// import dresses from '../../server/inventory.json';
-// import pants from '../../server/inventory.json';
 import inventoryImport from '../../server/Inventory.json';
 import Button from 'react-bootstrap/Button';
 import styles from '../../styles/NewestItemCard.module.css';

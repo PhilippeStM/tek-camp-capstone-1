@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
-// import shirts from '../../server/ShirtInventory.json';
-// import dresses from '../../server/DressInventory.json';
-// import pants from '../../server/PantsInventory.json';
 import inventoryImport from "../../server/Inventory.json";
 import Card from 'react-bootstrap/Card';
 import CardDeck from 'react-bootstrap/CardDeck';

@@ -1,6 +1,7 @@
 {
     "shirts":[
         {
+            "id": 1,
             "productName": "Men's T-Shirt",
             "description": "Our best selling short sleeve, the Crew Curve-Hem is as dependable as it gets.",
             "serialNumber": "123ABC",
@@ -11,6 +12,7 @@
             "productImage": "https://cdn.shopify.com/s/files/1/1368/3463/products/HONEYCOMB-CURVE-HEM.jpg?v=1590011077"
         },
         {
+            "id": 2,
             "productName": "Golf Premium Polo",
             "description": "This extraordinary all-cotton polo simply will not wrinkle, fade, shrink or pill.",
             "serialNumber": "234BCD",
@@ -21,6 +23,7 @@
             "productImage": "https://cdni.llbean.net/is/image/wim/300454_37956_41?hei=764&wid=665&resMode=sharp2&defaultImage=llbstage/A0211793_2"
         },
         {
+            "id": 3,
             "productName": "Colorblock Striped Shirt",
             "description": "Super soft and eye-popping, this collared shirt will make you stand out!",
             "serialNumber": "567GHI",
@@ -31,6 +34,7 @@
             "productImage": "https://img.ltwebstatic.com/images3_pi/2020/04/20/1587345847b2554e48da24f4c0a0cf698fcd502ff1_thumbnail_600x.webp"
         },
         {
+            "id": 4,
             "productName": "Dragon Button Up Shirt",
             "description": "Men's casual shirt, multi-purpose.",
             "serialNumber": "578DLA",
@@ -41,6 +45,7 @@
             "productImage": "https://img.ltwebstatic.com/images3_pi/2020/05/25/1590398759cc4806eff157f77e84b07520eadd0e48.webp"
         },
         {
+            "id": 5,
             "productName": "Pocketed Shirt",
             "description": "Where casual meets pockets! Features a blue/grey/white design with buttons.",
             "serialNumber": "321DJI",
@@ -53,6 +58,7 @@
     ],
     "pants":[
         {
+            "id": 6,
             "productName": "Cropped Pants",
             "description": "Women's High waisted Slim Fit Office Casual Pants Trousers with Pockets.",
             "serialNumber": "456DEF",
@@ -63,6 +69,7 @@
             "productImage": "https://images-na.ssl-images-amazon.com/images/I/61O58llG6AL._AC_UX342_.jpg"
         },
         {
+            "id": 7,
             "productName": "Ripstop Pants",
             "description": "Stay adventure bound in our most versatile everyday pants.",
             "serialNumber": "122JNA",
@@ -73,6 +80,7 @@
             "productImage": "https://vuori.imgix.net/s/files/1/0022/4008/6074/products/VW401COP_1_2048x.jpg?auto=compress,format&w=1230&v=1595613506"
         },
         {
+            "id": 8,
             "productName": "Work Canvas Pants",
             "description": "Take on any job with the Ridgecut FMB19-1027 Men's Regular Fit Flex Work Canvas Pants.",
             "serialNumber": "378YUE",
@@ -83,6 +91,7 @@
             "productImage": "https://media.tractorsupply.com/is/image/TractorSupplyCompany/1374635?$456$"
         },
         {
+            "id": 9,
             "productName": "Track Pants",
             "description": "Perfect for running or hitting the gym.",
             "serialNumber": "654SDH",
@@ -93,6 +102,7 @@
             "productImage": "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy/c9753d23e1c34cb98a2dab1a012985db_9366/Bandrix_Track_Pants_Black_FM3887_21_model.jpg"
         },
         {
+            "id": 10,
             "productName": "Skating Jeans",
             "description": "Utility-look jeans from BDG with a baggy fit.",
             "serialNumber": "832SDJ",
@@ -105,6 +115,7 @@
     ],
     "dresses":[
         {
+            "id": 11,
             "productName": "Striped Dress",
             "description": "Perfect for pairing with seaside drinks or date night.",
             "serialNumber": "345CDE",
@@ -115,6 +126,7 @@
             "productImage": "https://www.vineyardvines.com/dw/image/v2/AAHW_PRD/on/demandware.static/-/Sites-vineyardvines-master/default/dw2b41d174/images/2020/2Q010366_3746_LD_F.jpg?sw=1680&sh=2000&sm=cut"
         },
         {
+            "id": 12,
             "productName": "Party Dress",
             "description": "Show up ready to impress with the latest styles!",
             "serialNumber": "457HFG",
@@ -125,6 +137,7 @@
             "productImage": "https://img.ltwebstatic.com/images3_pi/2020/08/26/15984233250c9ed59bb7263e08772fb3f82b80da29_thumbnail_600x.webp"
         },
         {
+            "id": 13,
             "productName": "Elegant Evening Dress",
             "description": "Perfect for formal occasions.",
             "serialNumber": "871UJN",
@@ -135,6 +148,7 @@
             "productImage": "https://cdn.shopify.com/s/files/1/2107/8441/products/Lace_Appliques_V-Neck_Long_Sleeveless_Elegant_Evening_Dresses.jpg?v=1571610310"
         },
         {
+            "id": 14,
             "productName": "Simple Dress",
             "description": "Layered Flutter Sleeve Boxy Pleated Dress",
             "serialNumber": "375ENE",
@@ -145,6 +159,7 @@
             "productImage": "https://img.ltwebstatic.com/images3_pi/2020/04/24/1587666795b7d945a34064c295afedd680ada93fa4_thumbnail_600x.webp"
         },
         {
+            "id": 15,
             "productName": "Floral Summer Dress",
             "description": "Stay in touch with your romantic side with this white stretch cotton flared midi dress.",
             "serialNumber": "225JJK",
