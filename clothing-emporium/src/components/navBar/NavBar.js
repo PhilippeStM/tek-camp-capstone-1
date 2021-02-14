@@ -13,28 +13,31 @@ const NavBar = () => {
 
     let inventory = inventoryImport;
     let [search, setSearch] = useState("");
-    let [searchLoopQuery, setSearchLoopQuery] = useState([]);
+    let [returnItem, setReturnItem] = useState([]);
+
 
     const inputChange = (e) => {
         setSearch(e.target.value);
     }
 
-    const submitSearchQuery = (e) => {
+    const submitSearchQuery = (e) => {    
+        
         let i = 0;
         let array = [];
+
         while (i < inventory.shirts.length) {
             array.push(inventory.shirts[i].productName)
             if(search == array[i]){
-                console.log("This search input matches one of the product names: " + inventory.shirts[i].productName);
+                setReturnItem(inventory.shirts[i].productName + " is available for purchase.");
+                return returnItem;
             }
-            else(console.log("No item was found, please check your spelling."))
+            else{
+                setReturnItem("Item not found or not in stock, please check spelling.");
+            }
             i++;
         }
         console.log(array);
-        setSearchLoopQuery(array);
-        return setSearchLoopQuery;
     }
-
 
     // search loop query might be the key to finding all info thru search functionality.
 
@@ -54,7 +57,7 @@ const NavBar = () => {
                 </Form>
                 <Cart className={styles.cart} />
             </Navbar>
-
+    <p>{returnItem}</p>
         </center>
     )
 }
