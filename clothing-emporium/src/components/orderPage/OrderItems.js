@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
+import { Context } from '../cart/CartContext';
 import Button from 'react-bootstrap/Button';
 import inventoryImport from "../../server/Inventory.json";
 import Card from 'react-bootstrap/Card';
@@ -6,6 +7,15 @@ import CardDeck from 'react-bootstrap/CardDeck';
 import styles from '../../styles/OrderItems.module.css';
 
 const OrderItems = () => {
+
+    // const [context, setContext] = useState([]);
+    const [cart, setCart] = useState([]);
+
+    const updateCart = (e) => {
+        setCart(inventory);
+    }
+
+    console.log(context);
 
     const inventory = inventoryImport;
 
@@ -26,7 +36,7 @@ const OrderItems = () => {
                             </Card.Text>
                         </Card.Body>
                         <Card.Footer>
-                            <Button>Add to Cart</Button>
+                            <Button onClick={updateCart}>Add {data.productName} to Cart</Button>
                             <br></br>
                             <small>({data.quantity} in stock)</small>
                         </Card.Footer>

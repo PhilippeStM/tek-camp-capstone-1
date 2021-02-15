@@ -1,17 +1,19 @@
 import React from 'react';
 import OrderItems from './OrderItems';
 import NavBar from '../navBar/NavBar';
+import { Context } from '../cart/CartContext';
 
 const OrderPage = () => {
 
-    return (
-<center>
+    console.log(Context);
 
-    <NavBar />
-    <h3>Welcome to the order page:</h3>
-    <p>Select any items you wish to add to your cart, then proceed to checkout when complete.</p>
-    <OrderItems />
-</center>
+    return (
+        <center>
+            <NavBar />
+            <h3>Welcome to the order page:</h3>
+            <p>Select any items you wish to add to your cart, then proceed to checkout when complete.</p>
+            <OrderItems />
+        </center>
     )
 }
 
