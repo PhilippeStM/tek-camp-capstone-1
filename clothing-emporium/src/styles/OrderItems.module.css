@@ -1,0 +1,22 @@
+.deck{
+    max-width: 1900px;
+}
+
+.smaller {
+    font-size: smaller;
+}
+
+.price {
+    font-size: larger;
+    font-weight: 600;
+}
+
+.desc {
+    font-style: italic;
+    font-size: larger;
+}
+
+.img {
+    height: 400px;
+    object-fit: cover;
+}
