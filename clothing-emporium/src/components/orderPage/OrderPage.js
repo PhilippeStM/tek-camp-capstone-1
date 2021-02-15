@@ -1,11 +1,11 @@
 import React from 'react';
 import OrderItems from './OrderItems';
 import NavBar from '../navBar/NavBar';
-import { Context } from '../cart/CartContext';
+import context from '../cart/CartContext';
 
 const OrderPage = () => {
 
-    console.log(Context);
+    console.log(context);
 
     return (
         <center>

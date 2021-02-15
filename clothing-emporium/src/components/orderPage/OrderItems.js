@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
-import { Context } from '../cart/CartContext';
+import CartContext from '../cart/CartContext';
 import Button from 'react-bootstrap/Button';
 import inventoryImport from "../../server/Inventory.json";
 import Card from 'react-bootstrap/Card';
@@ -8,16 +8,17 @@ import styles from '../../styles/OrderItems.module.css';
 
 const OrderItems = () => {
 
-    // const [context, setContext] = useState([]);
-    const [cart, setCart] = useState([]);
+    const { cartContext, setCartContext } = useContext(CartContext);
 
-    const updateCart = (e) => {
-        setCart(inventory);
-    }
-
-    console.log(context);
+    // const [cart, setCart] = useState([]);
 
     const inventory = inventoryImport;
+
+    const updateCart = (data) => {
+        setCartContext([...cartContext, data.productName]);
+    }
+
+    // console.log(cartContext);
 
     return (
         <center>
@@ -36,7 +37,7 @@ const OrderItems = () => {
                             </Card.Text>
                         </Card.Body>
                         <Card.Footer>
-                            <Button onClick={updateCart}>Add {data.productName} to Cart</Button>
+                            <Button onClick={e => {updateCart(data)}}>Add {data.productName} to Cart</Button>
                             <br></br>
                             <small>({data.quantity} in stock)</small>
                         </Card.Footer>
