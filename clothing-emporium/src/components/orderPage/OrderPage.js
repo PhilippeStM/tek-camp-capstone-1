@@ -1,5 +1,5 @@
 import React from 'react';
-import ShirtOrderItems from './ShirtOrderItems';
+import OrderItems from './OrderItems';
 import NavBar from '../navBar/NavBar';
 
 const OrderPage = () => {
@@ -10,7 +10,7 @@ const OrderPage = () => {
     <NavBar />
     <h3>Welcome to the order page:</h3>
     <p>Select any items you wish to add to your cart, then proceed to checkout when complete.</p>
-    <ShirtOrderItems />
+    <OrderItems />
 </div>
     )
 }

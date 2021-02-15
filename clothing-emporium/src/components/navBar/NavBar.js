@@ -21,30 +21,39 @@ const NavBar = () => {
     }
 
     const submitSearchQuery = (e) => {    
-        
+
         let i = 0;
-        let array = [];
+        let arrayShirts = [];
+        let arrayPants = [];
+        let arrayDresses = [];
 
         while (i < inventory.shirts.length) {
-            array.push(inventory.shirts[i].productName)
-            if(search == array[i]){
-                setReturnItem(inventory.shirts[i].productName + " is available for purchase.");
+            arrayShirts.push(inventory.shirts[i].productName);
+            arrayPants.push(inventory.pants[i].productName);
+            arrayDresses.push(inventory.dresses[i].productName);
+
+            if(search == arrayShirts[i]){
+                setReturnItem(inventory.shirts[i]);
                 return returnItem;
-            }
-            else{
-                setReturnItem("Item not found or not in stock, please check spelling.");
-            }
+            }            
+            else if(search == arrayDresses[i]){
+                setReturnItem(inventory.dresses[i]);
+                return returnItem;
+            } 
+            else if(search == arrayPants[i]){
+                setReturnItem(inventory.pants[i]);
+                return returnItem;
+            } 
+            else(setReturnItem("Item not found."))
             i++;
         }
-        console.log(array);
+        console.log(arrayDresses);
     }
 
-    // search loop query might be the key to finding all info thru search functionality.
 
     return (
         <center>
             <h1>Clothing Emporium</h1>
-            {/* {console.log(searchLoopQuery)} */}
             <Navbar bg="dark" variant="dark" className={styles.navBar}>
                 <Nav>
                     <Link to="/" className={styles.link}>Home</Link>
@@ -57,7 +66,11 @@ const NavBar = () => {
                 </Form>
                 <Cart className={styles.cart} />
             </Navbar>
-    <p>{returnItem}</p>
+            <section>
+                <p>{returnItem.productName}</p>
+                <img src={returnItem.productImage}></img>    
+            </section>
+
         </center>
     )
 }
