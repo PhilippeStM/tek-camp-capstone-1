@@ -53,6 +53,7 @@ const NavBar = () => {
     return (
         <center>
             <h1>Clothing Emporium</h1>
+            <br></br>
             <Navbar bg="dark" variant="dark" className={styles.navBar}>
                 <Nav>
                     <Link to="/" className={styles.link}>Home</Link>

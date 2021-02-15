@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import CartContext from '../cart/CartContext';
+import TotalPriceContext from '../cart/TotalPriceContext';
 import Button from 'react-bootstrap/Button';
 import inventoryImport from "../../server/Inventory.json";
 import Card from 'react-bootstrap/Card';
@@ -9,12 +10,22 @@ import styles from '../../styles/OrderItems.module.css';
 const OrderItems = () => {
 
     const { cartContext, setCartContext } = useContext(CartContext);
+    const { totalPriceContext, setTotalPriceContext } = useContext(TotalPriceContext);
+    const [totalPrice, setTotalPrice] = useState(0);
     const inventory = inventoryImport;
 
     const updateCart = (data) => {
         setCartContext([...cartContext, [data.productName + " $" + data.price]]);
     }
 
+    const updatePrice = (data) => {
+        setTotalPrice(data.price);
+        setTotalPriceContext(totalPrice + TotalPriceContext);
+    }
+
+        console.log("total price: " + totalPrice);
+        console.log("total price context: " + totalPriceContext);
+        
     return (
         <center>
             <CardDeck className={styles.deck}>
@@ -32,7 +43,7 @@ const OrderItems = () => {
                             </Card.Text>
                         </Card.Body>
                         <Card.Footer>
-                            <Button onClick={e => {updateCart(data)}}>Add {data.productName} to Cart</Button>
+                            <Button onClick={e => {updateCart(data); updatePrice(data);}}>Add {data.productName} to Cart</Button>
                             <br></br>
                             <small>({data.quantity} in stock)</small>
                         </Card.Footer>
