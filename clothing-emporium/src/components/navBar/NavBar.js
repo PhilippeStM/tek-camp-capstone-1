@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useContext } from 'react';
 import { Link } from "react-router-dom";
-import Cart from '../cart/Cart';
+import Cart from './Cart';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
 import FormControl from 'react-bootstrap/FormControl';
@@ -49,7 +49,6 @@ const NavBar = () => {
         }
         console.log(arrayDresses);
     }
-
 
     return (
         <center>

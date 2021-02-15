@@ -9,16 +9,11 @@ import styles from '../../styles/OrderItems.module.css';
 const OrderItems = () => {
 
     const { cartContext, setCartContext } = useContext(CartContext);
-
-    // const [cart, setCart] = useState([]);
-
     const inventory = inventoryImport;
 
     const updateCart = (data) => {
         setCartContext([...cartContext, data.productName]);
     }
-
-    // console.log(cartContext);
 
     return (
         <center>
@@ -60,7 +55,7 @@ const OrderItems = () => {
                             </Card.Text>
                         </Card.Body>
                         <Card.Footer>
-                            <Button>Add to Cart</Button>
+                        <Button onClick={e => {updateCart(data)}}>Add {data.productName} to Cart</Button>
                             <br></br>
                             <small>({data.quantity} in stock)</small>
                         </Card.Footer>
@@ -83,7 +78,7 @@ const OrderItems = () => {
                             </Card.Text>
                         </Card.Body>
                         <Card.Footer>
-                            <Button>Add to Cart</Button>
+                        <Button onClick={e => {updateCart(data)}}>Add {data.productName} to Cart</Button>
                             <br></br>
                             <small>({data.quantity} in stock)</small>
                         </Card.Footer>
