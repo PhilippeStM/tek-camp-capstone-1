@@ -1,5 +1,6 @@
 .navBar {
-    max-width: 1000px;
+    max-width: 750px;
+    align-items: center;
 }
 
 .navBar .link {
@@ -17,4 +18,16 @@
 
 .navBar .button {
     margin-right: 50px;
+}
+
+.searchView {
+    max-height: 325px;
+    width: fit-content;
+    margin: 5px;
+    padding: 5px;
+}
+
+.searchViewImg {
+    max-height: 200px;
+    margin-bottom: 15px;
 }

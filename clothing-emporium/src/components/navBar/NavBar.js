@@ -14,13 +14,13 @@ const NavBar = () => {
     let inventory = inventoryImport;
     let [search, setSearch] = useState("");
     let [returnItem, setReturnItem] = useState([]);
-
+    let renderSearch = false;
 
     const inputChange = (e) => {
         setSearch(e.target.value);
     }
 
-    const submitSearchQuery = (e) => {    
+    const submitSearchQuery = (e) => {
 
         let i = 0;
         let arrayShirts = [];
@@ -32,19 +32,19 @@ const NavBar = () => {
             arrayPants.push(inventory.pants[i].productName);
             arrayDresses.push(inventory.dresses[i].productName);
 
-            if(search == arrayShirts[i]){
+            if (search == arrayShirts[i]) {
                 setReturnItem(inventory.shirts[i]);
                 return returnItem;
-            }            
-            else if(search == arrayDresses[i]){
+            }
+            else if (search == arrayDresses[i]) {
                 setReturnItem(inventory.dresses[i]);
                 return returnItem;
-            } 
-            else if(search == arrayPants[i]){
+            }
+            else if (search == arrayPants[i]) {
                 setReturnItem(inventory.pants[i]);
                 return returnItem;
-            } 
-            else(setReturnItem("Item not found."))
+            }
+            else (setReturnItem("Item not found."))
             i++;
         }
         console.log(arrayDresses);
@@ -60,14 +60,15 @@ const NavBar = () => {
                     <Link to="/checkout" className={styles.link}>Checkout</Link>
                 </Nav>
                 <Form inline>
-                    <FormControl onChange={inputChange} type="text" placeholder="Search" />
+                    <FormControl className={styles.input} onChange={inputChange} type="text" placeholder="Search" />
                     <Button onClick={submitSearchQuery} variant="outline-info" className={styles.button}>Search</Button>
                 </Form>
                 <Cart className={styles.cart} />
             </Navbar>
-            <section>
-                <p>{returnItem.productName}</p>
-                <img src={returnItem.productImage}></img>    
+            <section className={styles.searchView}>
+                <h5>{returnItem.productName}</h5>
+                <h6>{returnItem.price}</h6>
+                <img className={styles.searchViewImg} src={returnItem.productImage}></img>
             </section>
 
         </center>

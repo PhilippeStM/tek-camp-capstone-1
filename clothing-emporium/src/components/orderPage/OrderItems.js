@@ -12,7 +12,7 @@ const OrderItems = () => {
     const inventory = inventoryImport;
 
     const updateCart = (data) => {
-        setCartContext([...cartContext, data.productName]);
+        setCartContext([...cartContext, [data.productName + " $" + data.price]]);
     }
 
     return (
