@@ -15,9 +15,9 @@ const HomePage = () => {
 
         <div>
             <NavBar />
-            <h2 className={styles.align}>Featured Products:</h2>
+            <h2 className={styles.h2}>Featured Products:</h2>
             <CarouselComponent />
-            <h2 className={styles.align}>Newest Products:</h2>
+            <h2 className={styles.h2}>Newest Products:</h2>
             <NewestItemCard />
         </div>
 

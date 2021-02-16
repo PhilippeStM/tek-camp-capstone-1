@@ -14,7 +14,7 @@ const NewestItem = (props) => {
         <center>
             <CardDeck className={styles.wrapper}>
                 <Card>
-                    <Card.Img variant="top" src={inventory.dresses[4].productImage} />
+                    <Card.Img className={styles.img} variant="top" src={inventory.dresses[4].productImage} />
                     <Card.Body>
                         <Card.Title>{inventory.dresses[4].productName}</Card.Title>
                         <Card.Text>
@@ -25,7 +25,7 @@ const NewestItem = (props) => {
                 </Card>
 
                 <Card>
-                    <Card.Img variant="top" src={inventory.shirts[3].productImage} />
+                    <Card.Img className={styles.img} variant="top" src={inventory.shirts[3].productImage} />
                     <Card.Body>
                         <Card.Title>{inventory.shirts[3].productName}</Card.Title>
                         <Card.Text>
@@ -36,7 +36,7 @@ const NewestItem = (props) => {
                 </Card>
 
                 <Card>
-                    <Card.Img variant="top" src={inventory.pants[4].productImage} />
+                    <Card.Img className={styles.img} variant="top" src={inventory.pants[4].productImage} />
                     <Card.Body>
                         <Card.Title>{inventory.pants[4].productName}</Card.Title>
                         <Card.Text>
@@ -47,7 +47,7 @@ const NewestItem = (props) => {
                 </Card>
 
                 <Card>
-                    <Card.Img variant="top" src={inventory.shirts[4].productImage} />
+                    <Card.Img className={styles.img} variant="top" src={inventory.shirts[4].productImage} />
                     <Card.Body>
                         <Card.Title>{inventory.shirts[4].productName}</Card.Title>
                         <Card.Text>
