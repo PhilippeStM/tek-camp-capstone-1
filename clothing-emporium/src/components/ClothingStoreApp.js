@@ -22,7 +22,6 @@ const ClothingStoreApp = () => {
                     <Route exact path="/item/:id" component={ItemViewPage}></Route>
                 </Router>
             </TotalPriceContext.Provider>
-
         </CartContext.Provider>
     )
 }
