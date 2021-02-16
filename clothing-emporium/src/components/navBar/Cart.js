@@ -8,7 +8,7 @@ const Cart = () => {
     const cartContext = useContext(CartContext);
     const totalPriceContext = useContext(TotalPriceContext);
 
-    const displayContext = cartContext;
+    // const displayContext = cartContext;
 
 
     return (
@@ -19,7 +19,7 @@ const Cart = () => {
                 </Dropdown.Toggle>
                     <Dropdown.Menu>
 
-                {displayContext.cartContext.map(data => (
+                {cartContext.cartContext.map(data => (
                         <Dropdown.Item>{data}</Dropdown.Item>
                 ))}
                 <hr></hr>

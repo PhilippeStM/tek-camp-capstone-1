@@ -1,14 +1,31 @@
 import React, { useContext } from 'react';
+import Jumbotron from 'react-bootstrap/Jumbotron';
 import CartContext from '../cart/CartContext';
 import TotalPriceContext from '../cart/TotalPriceContext';
 import NavBar from '../navBar/NavBar';
 
 const CheckoutPage = () => {
-    return(
-        <div>
+
+    const cartContext = useContext(CartContext);
+    const totalPriceContext = useContext(TotalPriceContext);
+
+    return (
+        <center>
             <NavBar />
-            <h3>This is the checkout page!</h3>
-        </div>
+
+            <Jumbotron>
+                <h1>Review Order:</h1>
+                {cartContext.cartContext.map(data => (
+                    <ul>
+                        <li>{data}</li>
+                    </ul>
+                ))}
+    <h2>Total Price: ${totalPriceContext.totalPriceContext.toFixed(2)}</h2>
+
+            </Jumbotron>
+
+
+        </center>
     )
 }
 
