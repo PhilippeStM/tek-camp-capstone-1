@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import CartContext from '../cart/CartContext';
+import TotalPriceContext from '../cart/TotalPriceContext';
 import NavBar from '../navBar/NavBar';
 
 const CheckoutPage = () => {

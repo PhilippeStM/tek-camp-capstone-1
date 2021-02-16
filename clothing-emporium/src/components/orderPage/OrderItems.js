@@ -11,7 +11,6 @@ const OrderItems = () => {
 
     const { cartContext, setCartContext } = useContext(CartContext);
     const { totalPriceContext, setTotalPriceContext } = useContext(TotalPriceContext);
-    const [totalPrice, setTotalPrice] = useState(0);
     const inventory = inventoryImport;
 
     const updateCart = (data) => {
@@ -19,12 +18,8 @@ const OrderItems = () => {
     }
 
     const updatePrice = (data) => {
-        setTotalPrice(data.price);
-        setTotalPriceContext(totalPrice + TotalPriceContext);
+        setTotalPriceContext(data.price + totalPriceContext);
     }
-
-        console.log("total price: " + totalPrice);
-        console.log("total price context: " + totalPriceContext);
         
     return (
         <center>
@@ -66,7 +61,7 @@ const OrderItems = () => {
                             </Card.Text>
                         </Card.Body>
                         <Card.Footer>
-                        <Button onClick={e => {updateCart(data)}}>Add {data.productName} to Cart</Button>
+                        <Button onClick={e => {updateCart(data); updatePrice(data);}}>Add {data.productName} to Cart</Button>
                             <br></br>
                             <small>({data.quantity} in stock)</small>
                         </Card.Footer>
@@ -89,7 +84,7 @@ const OrderItems = () => {
                             </Card.Text>
                         </Card.Body>
                         <Card.Footer>
-                        <Button onClick={e => {updateCart(data)}}>Add {data.productName} to Cart</Button>
+                        <Button onClick={e => {updateCart(data); updatePrice(data);}}>Add {data.productName} to Cart</Button>
                             <br></br>
                             <small>({data.quantity} in stock)</small>
                         </Card.Footer>

@@ -14,7 +14,6 @@ const NavBar = () => {
     let inventory = inventoryImport;
     let [search, setSearch] = useState("");
     let [returnItem, setReturnItem] = useState([]);
-    let renderSearch = false;
 
     const inputChange = (e) => {
         setSearch(e.target.value);

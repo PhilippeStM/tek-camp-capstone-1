@@ -22,11 +22,6 @@ const NewestItem = (props) => {
                             <p>${inventory.dresses[4].price}</p>
                         </Card.Text>
                     </Card.Body>
-                    <Card.Footer>
-                        <small>ADD TO CART </small>
-                        <Link to={"/item/" + inventory.dresses[4].id} params={inventory.dresses[4].id}>View Details</Link>
-                        <small>({inventory.dresses[4].quantity} in stock)</small>
-                    </Card.Footer>
                 </Card>
 
                 <Card>
@@ -38,10 +33,6 @@ const NewestItem = (props) => {
                             <p>${inventory.shirts[3].price}</p>
                         </Card.Text>
                     </Card.Body>
-                    <Card.Footer>
-                        <small>ADD TO CART </small>
-                        <small>({inventory.shirts[3].quantity} in stock)</small>
-                    </Card.Footer>
                 </Card>
 
                 <Card>
@@ -53,10 +44,6 @@ const NewestItem = (props) => {
                             <p>${inventory.pants[4].price}</p>
                         </Card.Text>
                     </Card.Body>
-                    <Card.Footer>
-                        <small>ADD TO CART </small>
-                        <small>({inventory.pants[4].quantity} in stock)</small>
-                    </Card.Footer>
                 </Card>
 
                 <Card>
@@ -68,10 +55,6 @@ const NewestItem = (props) => {
                             <p>${inventory.shirts[4].price}</p>
                         </Card.Text>
                     </Card.Body>
-                    <Card.Footer>
-                        <small>ADD TO CART </small>
-                        <small>({inventory.shirts[4].quantity} in stock)</small>
-                    </Card.Footer>
                 </Card>
             </CardDeck>
         </center>

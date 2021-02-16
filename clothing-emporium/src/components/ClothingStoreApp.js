@@ -10,7 +10,7 @@ import ItemViewPage from './itemViewPage/ItemViewPage';
 const ClothingStoreApp = () => {
 
     const [cartContext, setCartContext] = useState([]);
-    const [totalPriceContext, setTotalPriceContext] = useState("");
+    const [totalPriceContext, setTotalPriceContext] = useState(0);
 
     return (
         <CartContext.Provider value={{ cartContext, setCartContext }}>
