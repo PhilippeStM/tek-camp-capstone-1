@@ -1,6 +1,9 @@
 .form {
-    max-width: 800px;
-    margin: 80px auto;
+    border: rgba(128, 128, 128, 0.541) solid 1px;
+    border-radius: 25px;
+    max-width: 400px;
+    padding: 20px;
+    margin: 40px auto;
 }
 
 .button {
