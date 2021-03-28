@@ -1,0 +1,33 @@
+.navBar {
+    max-width: 750px;
+    align-items: center;
+}
+
+.navBar .link {
+    color: whitesmoke;
+    margin: 0px 15px 0px 15px;
+}
+
+.navBar .link:hover {
+    color: orange;
+}
+
+.navBar .cart {
+    margin-left: 25px;
+}
+
+.navBar .button {
+    margin-right: 50px;
+}
+
+.searchView {
+    max-height: 325px;
+    width: fit-content;
+    margin: 5px;
+    padding: 5px;
+}
+
+.searchViewImg {
+    max-height: 200px;
+    margin-bottom: 15px;
+}
